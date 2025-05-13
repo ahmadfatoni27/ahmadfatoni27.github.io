@@ -10,15 +10,9 @@ section {
   background-color: #b22222;
 }
 
-.custom-bg-section-dark {
-  background-color: #767776;
-}
-
 #home .custom-bg-section p,
-#home .custom-bg-section h1,
-.custom-light {
-  color: white;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+#home .custom-bg-section h1 {
+  text-shadow: 1px 1px 5px #000000cc;
 }
 
 /* nav */
@@ -38,7 +32,6 @@ section {
 
 .navbar-brand,
 .nav-link {
-  color: #fff !important;
   font-weight: 500;
 }
 
@@ -67,22 +60,6 @@ section {
   transform: scale(1.2);
   color: #b22222;
 }
-
-#home .btn-dark {
-  background-color: white;
-  color: black;
-  border: none;
-}
-
-#home .btn-outline-dark {
-  border: 1px solid white;
-  color: white;
-}
-
-#home .btn-outline-dark:hover {
-  background-color: white;
-  color: black;
-}
 /* end home */
 
 @media (max-width: 768px) {
@@ -97,10 +74,14 @@ section {
   }
 
   #home .custom-bg-section {
-    background-color: transparent;
+    background-color: transparent; /* buat background content 1 menjadi tranparan */
   }
 
   .maps-view {
-    display: none;
+    display: none; /* Sembunyikan maps agar tidak dobel */
+  }
+
+  .img-ilustration {
+    display: none; /* Sembunyikan maps agar tidak dobel */
   }
 }
