@@ -83,6 +83,8 @@ section {
   background-color: white;
   color: black;
 }
+/* end home */
+
 @media (max-width: 768px) {
   #home {
     background: url('../image/me_home.jpg') no-repeat center center;
@@ -97,19 +99,8 @@ section {
   #home .custom-bg-section {
     background-color: transparent;
   }
-}
-/* end home */
 
-.owl-carousel .item {
-  padding: 15px;
-}
-
-.owl-carousel img {
-  width: 100px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.owl-carousel img:hover {
-  transform: scale(1.05);
+  .maps-view {
+    display: none;
+  }
 }
