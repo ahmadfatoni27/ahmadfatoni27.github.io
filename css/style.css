@@ -1,0 +1,115 @@
+body {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.custom-bg-section {
+  background-color: #b22222;
+}
+
+.custom-bg-section-dark {
+  background-color: #767776;
+}
+
+#home .custom-bg-section p,
+#home .custom-bg-section h1,
+.custom-light {
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* nav */
+/* css ketika tampilan awal */
+.custom-navbar {
+  background-color: #0000004d;
+  padding: 12px 24px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+/* css ketika sudah di scroll */
+.custom-navbar.scrolled {
+  border-radius: 40px;
+  margin: 10px 20px;
+  box-shadow: 0 8px 20px #0000004d;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.nav-link.active,
+.nav-link:hover,
+.dot {
+  color: #b22222 !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* endnav */
+
+/* home */
+.social-icons i {
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+  color: #b22222;
+}
+
+#home .btn-dark {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+#home .btn-outline-dark {
+  border: 1px solid white;
+  color: white;
+}
+
+#home .btn-outline-dark:hover {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 768px) {
+  #home {
+    background: url('../image/me_home.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  #home .home-image {
+    display: none; /* Sembunyikan gambar agar tidak dobel */
+  }
+
+  #home .custom-bg-section {
+    background-color: transparent;
+  }
+}
+/* end home */
+
+.owl-carousel .item {
+  padding: 15px;
+}
+
+.owl-carousel img {
+  width: 100px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.owl-carousel img:hover {
+  transform: scale(1.05);
+}
